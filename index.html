@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a website that exposes my projects">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/fontawesome/css/all.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <script src="js/fontawesome/js/fontawesome.js"></script>
+    <script src="js/fontawesome/js/fontawesome.min.js"></script>
+    <script>
+            const activeNAV = "#home";
+
+            const activeNAV2 = "#home2";
+           </script>
+</head>
+<body>
+   <nav id="navigation">
+       <img src="projects/logo.jpg" width="200" height="100" alt="" class="logo" srcset="">
+       <ul class="new-navigations">
+           <li><a href="index.html" lang="en" target="_SELF" class="anchor-element" id="home">home</a></li>
+           <li><a href="about.php" lang="en" target="_SELF" class="anchor-element" id="about">about</a></li>
+           <li><a href="projects.php" lang="en" target="_SELF" class="anchor-element" id="projects">projects</a></li>
+           <li><a href="contact.php" lang="en" target="_SELF" class="anchor-element" id="contact">contacts</a></li>
+       </ul>
+    <i class="menue fa fa-hamburger" title="menu">menu</i>
+   </nav>
+   <main class="main-content">
+     <div class="quotes">
+       <section style=" padding:2px; border-radius: 10px;">
+         life is <span>not fair</span>;<br>
+         get use to 🚨.<br>
+     
+       <div class="details">
+           click here for more
+           <a href="about.php" lang="en" target="_SELF" style="background:white; padding:4px; border-radius:10px; color:black;">details</a>
+       </div>
+      </section>
+    </div>
+   </main>
+   <footer>
+       gladly built by femiteszoom
+</footer>
+   <script src="js/script.js"></script>
+   <script src="js/jquery.js"></script>
+</body>
+<script>
+  $(document).ready(function(){
+   const ElementTextNeeded = $(activeNAV);
+   ElementTextNeeded.css({
+     "color":"yellow"
+   });
+  setInterval(() => {
+    const ElementTextNeeded2 = $(activeNAV2);
+    ElementTextNeeded2.parent("li").css({
+      "boxShadow":"5px 5px yellow"
+    });
+
+   ElementTextNeeded2.css({
+     "color":"yellow"
+   });
+  }, 10);
+});
+</script>
+</html>

@@ -1,0 +1,27 @@
+</div>
+<footer>
+    gladly built by femiteszoom
+</footer>
+<script src="js/script.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+     $(document).ready(function(){
+   const ElementTextNeeded = $(activeNAV);
+   ElementTextNeeded.css({
+     "color":"yellow"
+   });
+  setInterval(() => {
+    const ElementTextNeeded2 = $(activeNAV2);
+    ElementTextNeeded2.parent("li").css({
+      "boxShadow":"5px 5px yellow"
+    });
+
+   ElementTextNeeded2.css({
+     "color":"yellow"
+   });
+  }, 10);
+});
+ 
+ </script>
+</body>
+</html>
